@@ -1,5 +1,7 @@
 import React, { useState } from "react";
- 
+import PIC1 from "../../assets/pic1.jpeg";
+import Logo from "../../assets/logo.png"
+
 const Home = () => {
   const [showVideo, setShowVideo] = useState(false);
 
@@ -14,11 +16,12 @@ const Home = () => {
         <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
           <div className="bg-green-600 rounded-lg p-6">
             <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-              Start your journey with <span class="text-blue-600">Preline</span>
+              Begin farming smarter with{" "}
+              <span class="text-blue-600">Agro Smart Hub</span>
             </h1>
             <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">
-              Hand-picked professionals and expertly crafted components,
-              designed for any kind of entrepreneur.
+              Expert insights and innovative tools, crafted for every farmer's
+              success with AgroSmart Hub.
             </p>
 
             <div class="mt-7 grid gap-3 w-full sm:inline-flex">
@@ -46,7 +49,7 @@ const Home = () => {
                 class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
                 href="#"
               >
-                Contact sales team
+                Contact our team
               </a>
             </div>
 
@@ -263,8 +266,8 @@ const Home = () => {
 
           <div class="relative ms-4">
             <img
-              class="w-full rounded-md"
-              src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"
+              class="w-full rounded-md h-[30rem]"
+              src={PIC1}
               alt="Image Description"
             />
             <div class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-neutral-800 dark:via-neutral-900/0 dark:to-neutral-900/0"></div>
@@ -405,20 +408,21 @@ const Home = () => {
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div class="max-w-2xl text-center mx-auto">
               <p class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-                Preline: A vision for 2023
+                {/* Preline: A vision for 2023 */}
               </p>
 
               <div class="mt-5 max-w-2xl">
                 <h1 class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
-                  The Intuitive Web Solutions
+                  The Intelligent Farming Solutions with AgroSmart Hub
                 </h1>
               </div>
 
               <div class="mt-5 max-w-3xl">
                 <p class="text-lg text-gray-600 dark:text-neutral-400">
-                  Preline UI is an open-source set of prebuilt UI components,
-                  ready-to-use examples and Figma design system based on the
-                  utility-first Tailwind CSS framework.
+                  AgroSmart Hub offers advanced agricultural tools, real-time
+                  monitoring, and automated systems to enhance precision
+                  farming. It fosters collaboration among farmers and experts
+                  for sustainable agricultural success.
                 </p>
               </div>
 
@@ -447,36 +451,8 @@ const Home = () => {
                   class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-800"
                   href="#"
                 >
-                  <svg
-                    class="flex-shrink-0 size-4"
-                    width="19"
-                    height="18"
-                    viewBox="0 0 19 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.875 18C8.531 18 9.875 16.656 9.875 15V12H6.875C5.219 12 3.875 13.344 3.875 15C3.875 16.656 5.219 18 6.875 18Z"
-                      fill="#0ACF83"
-                    ></path>
-                    <path
-                      d="M3.875 9C3.875 7.344 5.219 6 6.875 6H9.875V12H6.875C5.219 12 3.875 10.656 3.875 9Z"
-                      fill="#A259FF"
-                    ></path>
-                    <path
-                      d="M3.875 3C3.875 1.344 5.219 0 6.875 0H9.875V6H6.875C5.219 6 3.875 4.656 3.875 3Z"
-                      fill="#F24E1E"
-                    ></path>
-                    <path
-                      d="M9.87501 0H12.875C14.531 0 15.875 1.344 15.875 3C15.875 4.656 14.531 6 12.875 6H9.87501V0Z"
-                      fill="#FF7262"
-                    ></path>
-                    <path
-                      d="M15.875 9C15.875 10.656 14.531 12 12.875 12C11.219 12 9.87501 10.656 9.87501 9C9.87501 7.344 11.219 6 12.875 6C14.531 6 15.875 7.344 15.875 9Z"
-                      fill="#1ABCFE"
-                    ></path>
-                  </svg>
-                  Preline Figma
+                  <img src={Logo} alt="Logo" className="rounded-lg w-full h-10"/>
+                  {/* Preline Figma */}
                 </a>
               </div>
             </div>
@@ -489,18 +465,18 @@ const Home = () => {
           <div class="lg:col-span-4 mt-10 lg:mt-0">
             <img
               class="w-full rounded-xl"
-              src="https://images.unsplash.com/photo-1665686376173-ada7a0031a85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=700&q=80"
+              src="https://images.unsplash.com/photo-1437252611977-07f74518abd7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Image Description"
             />
           </div>
 
           <div class="lg:col-span-3 bg-green-600 p-6 rounded-lg">
             <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl dark:text-white">
-              Build Better Products
+              Elevate Your Farming Experience
             </h1>
             <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">
-              Introducing a new way for your brand to reach the creative
-              community.
+              Introducing a fresh approach for agricultural innovation to
+              connect with the farming community.
             </p>
 
             <div class="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
@@ -677,61 +653,16 @@ const Home = () => {
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div class="max-w-2xl text-center mx-auto bg-green-600 p-6 rounded-lg">
             <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">
-              Designed for you to get more{" "}
-              <span class="text-blue-600">simple</span>
+              Tailored for effortless agricultural management{" "}
+              {/* <span class="text-blue-600">simple</span> */}
             </h1>
             <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">
-              Build your business here. Take it anywhere.
+              Grow your farm's potential with AgroSmart Hub.
             </p>
           </div>
 
-          {/* <div class="mt-8 relative max-w-5xl mx-auto">
-            <div class="w-full object-cover h-96 sm:h-[480px] bg-[url('https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
-
-            <div class="absolute inset-0 size-full">
-              <div class="flex flex-col justify-center items-center size-full">
-                <Link
-                  to=""
-                  class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                      "_blank"
-                    );
-                  }}
-                >
-                  <svg
-                    class="flex-shrink-0 size-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polygon points="5 3 19 12 5 21 5 3" />
-                  </svg>
-                  Play the overview
-                </Link>
-              </div>
-            </div>
-
-            <div class="absolute bottom-12 -start-20 -z-[1] size-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg dark:to-neutral-900">
-              <div class="bg-white size-48 rounded-lg dark:bg-neutral-900"></div>
-            </div>
-
-            <div class="absolute -top-12 -end-20 -z-[1] size-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
-              <div class="bg-white size-48 rounded-full dark:bg-neutral-900"></div>
-            </div>
-          </div> */}
-
           <div className="mt-8 relative max-w-5xl mx-auto">
-            <div className="w-full object-cover h-96 sm:h-[480px] bg-[url('https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
+            <div className="w-full object-cover h-96 sm:h-[480px] bg-[url('https://plus.unsplash.com/premium_photo-1661900503280-36c1b4be3a66?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
 
             <div className="absolute inset-0 size-full">
               <div className="flex flex-col justify-center items-center size-full">
@@ -761,7 +692,7 @@ const Home = () => {
                 {showVideo && (
                   <iframe
                     className="w-full h-96 sm:h-[480px] rounded-xl"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src=" https://www.youtube.com/embed/mYdt6CAwKAY"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
